@@ -2,10 +2,12 @@
   (:use compojure.core)
   (:require [compojure.handler :as handler]
             [compojure.route :as route]
-            [hiccup.core :as hiccup]))
+            [hiccup.core :as hiccup]
+            [hiccup.page :as hiccup-page]))
 
 (defn publish [title description author slides]
   (hiccup/html
+   (hiccup-page/doctype :html5)
    [:html {:lang "ja"}
     [:head
      [:meta {:charset "utf-8"}]
