@@ -31,7 +31,7 @@
     [:body
      [:div.reveal
       ;; Any section element inside of this container is displayed as a slide
-      slides]
+      (into [:div.slides] slides)]
      [:script {:src "reveal.js/lib/js/head.min.js"}]
      [:script {:src "reveal.js/js/reveal.min.js"}]
      [:script

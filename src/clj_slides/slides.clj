@@ -7,8 +7,7 @@
 (def author "author")
 
 (def contents
-  [:div.slides
-   [:section
+  [[:section
     [:h1 "slide title"]
     [:p "hello"]]
 
